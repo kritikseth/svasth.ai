@@ -6,7 +6,6 @@
   - [Working Demo](#working-demo)
   - [Problem Statement ](#problem-statement)
   - [About](#about)
-  - [User Prerequisites](#user-prerequisites)
   - [What can Svasth.ai do](#what-can-svasth.ai-do)
   - [Features to be Implemented](#features-to-be-implemented)
 
@@ -20,9 +19,6 @@ Build a AI driven chatbot for general health related query(a first level screeni
 
 ## About
 We have created a chatbot that can reduce the stress from frontline healthcare workers and help the patients by providing a pre-diagnosis based on the symptoms and other basic information that a patient needs. The chatbot also helps in suggesting nearby hospitals to the patients.
-
-## User Prerequisites
-- [APP(Click here to download the app)](https://)
 
 ## What can Svasth.ai do
 The chatbot can answers your queries which include:
