@@ -1,2 +1,52 @@
 # svasth.ai
+#### *Medical Chat-Bot*
+*HackOff v3.0 - Siemens Healthineers Problem Statement 3*
+
+## Table Of Contents
+  - [Problem Statement ](#problem-statement)
+  - [About](#about)
+  - [User Prerequisites](#user-prerequisites)
+  - [Things Svasth.ai can do](#things-svasth.ai-can-do)
+  
+  
+## Working Demo
+- [Click Here to Working Chat-Bot Video](https://)
+
+## About
+We have created a chatbot that can reduce the stress from frontline healthcare workers and help the patients by providing a pre-diagnosis based on the symptoms and other basic information that a patient needs. The chatbot also helps in suggesting nearby hospitals to the patients.
+
+## User Prerequisites
+- [APP(Click here to download the app)](https://)
+
+## Things Svasth.ai can do
+The chatbot can answers your queries which include:
+1. Predicting diseases based on symptoms input by the user.
+2. Providing the symptoms of given disease and general drug used for its treatment 
+3. A user can also ask for the side-effects of drugs
+4. Recommends nearby hospitals
+
+## Technologies Used
+- RASA
+- python
+- git
+
+## Contributors
+
+- [Kritik Seth](https://github.com/kritikseth)
+
+- [Parisha Bhatia](https://github.com/ParishaKB)
+
+- [Paymanshu Sharma](https://github.com/Paymanshus)
+
+- [Shreyansh Bardia](https://github.com/SHREYANSH-BARDIA)
+
+- [Soham Sharangpani](https://github.com/SohamSharangpani)
+
+
+
+
+
+
+
+
  
