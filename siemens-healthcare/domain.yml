@@ -1,0 +1,199 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - symp_Drug reaction
+  - symp_Hepatitis D
+  - symp_Heart attack
+  - symp_(vertigo) Paroymsal
+  - symp_Hepatitis E
+  - symp_AIDS
+  - symp_Jaundice
+  - symp_Dengue
+  - symp_Pneumonia
+  - symp_Hyperthyroidism
+  - symp_Impetigo
+  - symp_Malaria
+  - symp_Bronchial Asthma
+  - symp_Peptic ulcer disease
+  - symp_Osteoarthristis
+  - symp_Alcoholic hepatitis
+  - symp_Arthritis
+  - symp_Urinary tract infection
+  - symp_Allergy
+  - symp_Hepatitis C
+  - symp_Acne
+  - symp_Hypoglycemia
+  - symp_Paralysis (brain hemorrhage)
+  - symp_hepatitis A
+  - symp_Fungal infection
+  - symp_Hypothyroidism
+  - symp_Diabetes
+  - symp_Hepatitis B
+  - symp_Hypertension
+  - symp_Dimorphic hemmorhoids(piles)
+  - symp_Migraine
+  - symp_Tuberculosis
+  - symp_Chicken pox
+  - symp_Gastroenteritis
+  - symp_GERD
+  - symp_Psoriasis
+  - symp_Chronic cholestasis
+  - symp_Common Cold
+  - symp_Cervical spondylosis
+  - symp_Typhoid
+  - symp_Varicose veins
+  - symp_Drug Reaction
+  - symp_(vertigo) Paroymsal  Positional Vertigo
+  - get_hospital
+  - get_disease
+  - bot_info
+  - get_sideeffects
+
+actions:
+  - action_search_hospital
+  - action_search_disease
+  - action_get_sideeffects
+
+entities:
+  - location
+  - symptoms
+  - medicine
+
+responses:
+  utter_greet:
+    - text: "Hi I am svasth.ai, a chatbot to help you with your medical needs. How can I help you today?"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_bot_info:
+    - text: "I am svasth.ai your personal AI based health chatbot. Some of my commands are:\n1. Syptoms of cholestasis\n2. Show me hospitals in Mumbai.\n3. I have chills, vomiting, high fever, sweating, headache, nausea, diarrhoea, muscle pain\n4. What are the side effects of diane-35, etc."
+
+  utter_symp_Drug Reaction:
+    - text: "Symptoms of Drug Reaction include: itching, skin rash, stomach pain, burning micturition, spotting urination"
+
+  utter_symp_Hepatitis D:
+    - text: "Symptoms of Hepatitis D include: joint pain, vomiting, fatigue, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes"
+
+  utter_symp_Heart attack:
+    - text: "Symptoms of Heart attack include: vomiting, breathlessness, sweating, chest pain"
+
+  utter_symp_(vertigo) Paroymsal  Positional Vertigo:
+    - text: "Symptoms of (vertigo) Paroymsal  Positional Vertigo include: vomiting, headache, nausea, spinning movements, loss of balance, unsteadiness"
+
+  utter_symp_Hepatitis E:
+    - text: "Symptoms of Hepatitis E include: joint pain, vomiting, fatigue, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding"
+
+  utter_symp_AIDS:
+    - text: "Symptoms of AIDS include: muscle wasting, patches in throat, high fever, extra marital contacts"
+
+  utter_symp_Jaundice:
+    - text: "Symptoms of Jaundice include: itching, vomiting, fatigue, weight loss, high fever, yellowish skin, dark urine, abdominal pain"
+
+  utter_symp_Dengue:
+    - text: "Symptoms of Dengue include: skin rash, chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body"
+
+  utter_symp_Pneumonia:
+    - text: "Symptoms of Pneumonia include: chills, fatigue, cough, high fever, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum"
+
+  utter_symp_Hyperthyroidism:
+    - text: "Symptoms of Hyperthyroidism include: fatigue, mood swings, weight loss, restlessness, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation"
+
+  utter_symp_Impetigo:
+    - text: "Symptoms of Impetigo include: skin rash, high fever, blister, red sore around nose, yellow crust ooze"
+
+  utter_symp_Malaria:
+    - text: "Symptoms of Malaria include: chills, vomiting, high fever, sweating, headache, nausea, diarrhoea, muscle pain"
+
+  utter_symp_Bronchial Asthma:
+    - text: "Symptoms of Bronchial Asthma include: fatigue, cough, high fever, breathlessness, family history, mucoid sputum"
+
+  utter_symp_Peptic ulcer disease:
+    - text: "Symptoms of Peptic ulcer disease include: vomiting, indigestion, loss of appetite, abdominal pain, passage of gases, internal itching"
+
+  utter_symp_Osteoarthristis:
+    - text: "Symptoms of Osteoarthristis include: joint pain, neck pain, knee pain, hip joint pain, swelling joints, painful walking"
+
+  utter_symp_Alcoholic hepatitis:
+    - text: "Symptoms of Alcoholic hepatitis include: vomiting, yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, history of alcohol consumption, fluid overload"
+
+  utter_symp_Arthritis:
+    - text: "Symptoms of Arthritis include: muscle weakness, stiff neck, swelling joints, movement stiffness, painful walking"
+
+  utter_symp_Urinary tract infection:
+    - text: "Symptoms of Urinary tract infection include: burning micturition, bladder discomfort, foul smell of urine, continuous feel of urine"
+
+  utter_symp_Allergy:
+    - text: "Symptoms of Allergy include: continuous sneezing, shivering, chills, watering from eyes"
+
+  utter_symp_Hepatitis C:
+    - text: "Symptoms of Hepatitis C include: fatigue, yellowish skin, nausea, loss of appetite, yellowing of eyes, family history"
+
+  utter_symp_Acne:
+    - text: "Symptoms of Acne include: skin rash, pus filled pimples, blackheads, scurring"
+
+  utter_symp_Hypoglycemia:
+    - text: "Symptoms of Hypoglycemia include: vomiting, fatigue, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations"
+
+  utter_symp_Paralysis (brain hemorrhage):
+    - text: "Symptoms of Paralysis (brain hemorrhage) include: vomiting, headache, weakness of one body side, altered sensorium"
+
+  utter_symp_hepatitis A:
+    - text: "Symptoms of hepatitis A include: joint pain, vomiting, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain"
+
+  utter_symp_Fungal infection:
+    - text: "Symptoms of Fungal infection include: itching, skin rash, nodal skin eruptions, dischromic patches"
+
+  utter_symp_Hypothyroidism:
+    - text: "Symptoms of Hypothyroidism include: fatigue, weight gain, cold hands and feets, mood swings, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation"
+
+  utter_symp_Diabetes:
+    - text: "Symptoms of Diabetes  include: fatigue, weight loss, restlessness, lethargy, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria"
+
+  utter_symp_Hepatitis B:
+    - text: "Symptoms of Hepatitis B include: itching, fatigue, lethargy, yellowish skin, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood_transfusion, receiving unsterile injections"
+
+  utter_symp_Hypertension:
+    - text: "Symptoms of Hypertension  include: headache, chest pain, dizziness, loss of balance, lack of concentration"
+
+  utter_symp_Dimorphic hemmorhoids(piles):
+    - text: "Symptoms of Dimorphic hemmorhoids(piles) include: constipation, pain during bowel movements, pain in anal region, bloody stool, irritation in anus"
+
+  utter_symp_Migraine:
+    - text: "Symptoms of Migraine include: acidity, indigestion, headache, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability, visual disturbances"
+
+  utter_symp_Tuberculosis:
+    - text: "Symptoms of Tuberculosis include: chills, vomiting, fatigue, weight loss, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum"
+
+  utter_symp_Chicken pox:
+    - text: "Symptoms of Chicken pox include: itching, skin rash, fatigue, lethargy, high fever, headache, loss of appetite, mild fever, swelled lymph_nodes, malaise, red spots over body"
+
+  utter_symp_Gastroenteritis:
+    - text: "Symptoms of Gastroenteritis include: vomiting, sunken eyes, dehydration, diarrhoea"
+
+  utter_symp_GERD:
+    - text: "Symptoms of GERD include: stomach pain, acidity, ulcers on tongue, vomiting, cough, chest pain"
+
+  utter_symp_Psoriasis:
+    - text: "Symptoms of Psoriasis include: skin rash, joint pain, skin peeling, silver like dusting, small dents in nails, inflammatory nails"
+
+  utter_symp_Chronic cholestasis:
+    - text: "Symptoms of Chronic cholestasis include: itching, vomiting, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes"
+
+  utter_symp_Common Cold:
+    - text: "Symptoms of Common Cold include: continuous sneezing, chills, fatigue, cough, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain"
+
+  utter_symp_Cervical spondylosis:
+    - text: "Symptoms of Cervical spondylosis include: back pain, weakness in limbs, neck pain, dizziness, loss of balance"
+
+  utter_symp_Typhoid:
+    - text: "Symptoms of Typhoid include: chills, vomiting, fatigue, high fever, headache, nausea, constipation, abdominal pain, diarrhoea, toxic look_(typhos), belly pain"
+
+  utter_symp_Varicose veins:
+    - text: "Symptoms of Varicose veins include: fatigue, cramps, bruising, obesity, swollen legs, swollen blood vessels, prominent veins on calf"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

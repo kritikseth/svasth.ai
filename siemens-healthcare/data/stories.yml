@@ -1,0 +1,232 @@
+version: "2.0"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+  
+  - story: bot_info_commands
+    steps:
+      - intent: bot_info
+      - action: utter_bot_info
+  
+  - story: search_sideeffects
+    steps:
+      - intent: get_sideeffects
+      - action: action_get_sideeffects
+
+  - story: search_hospital
+    steps:
+      - intent: get_hospital
+      - action: action_search_hospital
+
+  - story: search_symptoms
+    steps:
+      - intent: get_disease
+      - action: action_search_disease
+
+  - story: sto_symp_Drug Reaction
+    steps:
+      - intent: symp_Drug Reaction
+      - action: utter_symp_Drug Reaction
+
+  - story: sto_symp_Hepatitis D
+    steps:
+      - intent: symp_Hepatitis D
+      - action: utter_symp_Hepatitis D
+
+  - story: sto_symp_Heart attack
+    steps:
+      - intent: symp_Heart attack
+      - action: utter_symp_Heart attack
+
+  - story: sto_symp_(vertigo) Paroymsal  Positional Vertigo
+    steps:
+      - intent: symp_(vertigo) Paroymsal  Positional Vertigo
+      - action: utter_symp_(vertigo) Paroymsal  Positional Vertigo
+
+  - story: sto_symp_Hepatitis E
+    steps:
+      - intent: symp_Hepatitis E
+      - action: utter_symp_Hepatitis E
+
+  - story: sto_symp_AIDS
+    steps:
+      - intent: symp_AIDS
+      - action: utter_symp_AIDS
+
+  - story: sto_symp_Jaundice
+    steps:
+      - intent: symp_Jaundice
+      - action: utter_symp_Jaundice
+
+  - story: sto_symp_Dengue
+    steps:
+      - intent: symp_Dengue
+      - action: utter_symp_Dengue
+
+  - story: sto_symp_Pneumonia
+    steps:
+      - intent: symp_Pneumonia
+      - action: utter_symp_Pneumonia
+
+  - story: sto_symp_Hyperthyroidism
+    steps:
+      - intent: symp_Hyperthyroidism
+      - action: utter_symp_Hyperthyroidism
+
+  - story: sto_symp_Impetigo
+    steps:
+      - intent: symp_Impetigo
+      - action: utter_symp_Impetigo
+
+  - story: sto_symp_Malaria
+    steps:
+      - intent: symp_Malaria
+      - action: utter_symp_Malaria
+
+  - story: sto_symp_Bronchial Asthma
+    steps:
+      - intent: symp_Bronchial Asthma
+      - action: utter_symp_Bronchial Asthma
+
+  - story: sto_symp_Peptic ulcer disease
+    steps:
+      - intent: symp_Peptic ulcer disease
+      - action: utter_symp_Peptic ulcer disease
+
+  - story: sto_symp_Osteoarthristis
+    steps:
+      - intent: symp_Osteoarthristis
+      - action: utter_symp_Osteoarthristis
+
+  - story: sto_symp_Alcoholic hepatitis
+    steps:
+      - intent: symp_Alcoholic hepatitis
+      - action: utter_symp_Alcoholic hepatitis
+
+  - story: sto_symp_Arthritis
+    steps:
+      - intent: symp_Arthritis
+      - action: utter_symp_Arthritis
+
+  - story: sto_symp_Urinary tract infection
+    steps:
+      - intent: symp_Urinary tract infection
+      - action: utter_symp_Urinary tract infection
+
+  - story: sto_symp_Allergy
+    steps:
+      - intent: symp_Allergy
+      - action: utter_symp_Allergy
+
+  - story: sto_symp_Hepatitis C
+    steps:
+      - intent: symp_Hepatitis C
+      - action: utter_symp_Hepatitis C
+
+  - story: sto_symp_Acne
+    steps:
+      - intent: symp_Acne
+      - action: utter_symp_Acne
+
+  - story: sto_symp_Hypoglycemia
+    steps:
+      - intent: symp_Hypoglycemia
+      - action: utter_symp_Hypoglycemia
+
+  - story: sto_symp_Paralysis (brain hemorrhage)
+    steps:
+      - intent: symp_Paralysis (brain hemorrhage)
+      - action: utter_symp_Paralysis (brain hemorrhage)
+
+  - story: sto_symp_hepatitis A
+    steps:
+      - intent: symp_hepatitis A
+      - action: utter_symp_hepatitis A
+
+  - story: sto_symp_Fungal infection
+    steps:
+      - intent: symp_Fungal infection
+      - action: utter_symp_Fungal infection
+
+  - story: sto_symp_Hypothyroidism
+    steps:
+      - intent: symp_Hypothyroidism
+      - action: utter_symp_Hypothyroidism
+
+  - story: sto_symp_Diabetes
+    steps:
+      - intent: symp_Diabetes
+      - action: utter_symp_Diabetes
+
+  - story: sto_symp_Hepatitis B
+    steps:
+      - intent: symp_Hepatitis B
+      - action: utter_symp_Hepatitis B
+
+  - story: sto_symp_Hypertension
+    steps:
+      - intent: symp_Hypertension
+      - action: utter_symp_Hypertension
+
+  - story: sto_symp_Dimorphic hemmorhoids(piles)
+    steps:
+      - intent: symp_Dimorphic hemmorhoids(piles)
+      - action: utter_symp_Dimorphic hemmorhoids(piles)
+
+  - story: sto_symp_Migraine
+    steps:
+      - intent: symp_Migraine
+      - action: utter_symp_Migraine
+
+  - story: sto_symp_Tuberculosis
+    steps:
+      - intent: symp_Tuberculosis
+      - action: utter_symp_Tuberculosis
+
+  - story: sto_symp_Chicken pox
+    steps:
+      - intent: symp_Chicken pox
+      - action: utter_symp_Chicken pox
+
+  - story: sto_symp_Gastroenteritis
+    steps:
+      - intent: symp_Gastroenteritis
+      - action: utter_symp_Gastroenteritis
+
+  - story: sto_symp_GERD
+    steps:
+      - intent: symp_GERD
+      - action: utter_symp_GERD
+
+  - story: sto_symp_Psoriasis
+    steps:
+      - intent: symp_Psoriasis
+      - action: utter_symp_Psoriasis
+
+  - story: sto_symp_Chronic cholestasis
+    steps:
+      - intent: symp_Chronic cholestasis
+      - action: utter_symp_Chronic cholestasis
+
+  - story: sto_symp_Common Cold
+    steps:
+      - intent: symp_Common Cold
+      - action: utter_symp_Common Cold
+
+  - story: sto_symp_Cervical spondylosis
+    steps:
+      - intent: symp_Cervical spondylosis
+      - action: utter_symp_Cervical spondylosis
+
+  - story: sto_symp_Typhoid
+    steps:
+      - intent: symp_Typhoid
+      - action: utter_symp_Typhoid
+
+  - story: sto_symp_Varicose veins
+    steps:
+      - intent: symp_Varicose veins
+      - action: utter_symp_Varicose veins

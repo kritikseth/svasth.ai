@@ -1,0 +1,790 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - heyy
+    - hello
+    - helloo
+    - hi
+    - hii
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - goodafternoon
+
+- intent: bot_info
+  examples: |
+    - what can you do
+    - who are you
+    - how to use you
+    - are you a bot
+    - what are your features
+    - what all can you do
+    - what are your commands
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: get_sideeffects
+  examples: |
+    - What are the side effects of [radium](medicine)?
+    - What are the sideeffects of [ibuprofen](medicine)
+    - Does [ibuprofen](medicine) have any side effects?
+    - Does [naloxone](medicine) have any side effects
+    - does [niacin](medicine) have any sideeffects?
+    - Does [niacin](medicine) have any sideeffects
+    - does [chromium](medicine) have any side effects that i should know of?
+    - Does [niacin](medicine) have any side effects that i should know of?
+    - does [tr-700](medicine) have any sideeffects that i should know of?
+    - Does [tr-700](medicine) have any sideeffects that i should know of?
+    - Does [700](medicine) have any sideeffects that i should know of?
+    - Side effects of [ibuprofen](medicine)
+    - Sideeffects of [medicine](medicine)
+    - does [700](medicine) have any reactions?
+    - Does [niacin](medicine) have any reactions?
+    - Does [tr-700](medicine) have any reactions?
+    - does [naloxone](medicine) have any reactions that i should know of?
+    - Does [niacin](medicine) have any reactions that i should know of?
+    - Does [tr-700](medicine) have any reactions that i should know of?
+    - reactions of [naloxone](medicine)
+    - Reactions of [ibuprofen](medicine)
+    - reactions of [medicine](medicine)
+
+- intent: get_hospital
+  examples: |
+    - Show me hospitals in [Mumbai](location)
+    - Show me hospitals in [231312](location)
+    - Show me hospitals in [Pune](location)
+    - Show me hospitals around [Chennai](location)
+    - Are there any hospitals in [Delhi](location)
+    - Are there any hospitals in [Noida](location)
+    - Are there any hospitals around [Malad](location)
+    - Are there any hospitals iaroundn [Borivali](location)
+    - Hospital in [400092](location)
+    - Hospital in [239149](location)
+    - Hospital in [313123](location)
+    - Hospital around [313123](location)
+    - Hospital around [Lonavala](location)
+    - Show me hospitals around [Maharashtra](location)
+    - Hospital [Lonavala](location)
+    - Hospital [Pune](location)
+    - Show me clinic in [Mumbai](location)
+    - Show me clinic in [231312](location)
+    - Show me clinic in [Pune](location)
+    - Show me clinic around [Chennai](location)
+    - Are there any clinics in [Delhi](location)
+    - Are there any clinics in [Noida](location)
+    - Are there any clinics around [Malad](location)
+    - Are there any clinics iaroundn [Borivali](location)
+    - clinic in [638501](location)
+    - clinic in [239149](location)
+    - clinic in [313123](location)
+    - clinic around [313123](location)
+    - clinic around [Lonavala](location)
+    - Show me clinics around [Maharashtra](location)
+    - clinic [Lonavala](location)
+    - clinic [Pune](location)
+
+- intent: get_disease
+  examples: |
+    - I have [chills, vomiting, high fever, sweating, headache, nausea, diarrhoea, muscle pain](symptoms)
+    - I feel [muscle wasting, patches in throat, high fever, extra marital contacts](symptoms)
+    - Which disease do I have if I have [vomiting, breathlessness, sweating, chest pain](symptoms)
+    - I have [itching, skin rash, stomach pain, burning micturition, spotting urination](symptoms). Which disease do I have 
+    - I feel [chills, fatigue, cough, high fever, breathlessness, sweating](symptoms). Which disease do I have 
+    - Which disease causes [fatigue, cough, high fever, breathlessness](symptoms)
+    - Why am I feeling [muscle weakness, stiff neck, swelling joints, movement stiffness](symptoms) 
+    - Why do I feel [itching, skin rash, fatigue, lethargy, high fever, headache, loss of appetite](symptoms)
+
+- intent: symp_Fungal infection
+  examples: |
+    - Fungal infection symptoms
+    - what are the symptoms of Fungal infection
+    - symptoms of Fungal infection
+    - Fungal infection
+    - most common symptoms of Fungal infection
+    - features of Fungal infection
+    - signs for Fungal infection
+    - what are the traits of Fungal infection
+    - Fungal infection signs
+    - Fungal infection features
+    - Fungal infection traits
+
+- intent: symp_Allergy
+  examples: |
+    - Allergy symptoms
+    - what are the symptoms of Allergy
+    - symptoms of Allergy
+    - Allergy
+    - most common symptoms of Allergy
+    - features of Allergy
+    - signs for Allergy
+    - what are the traits of Allergy
+    - Allergy signs
+    - Allergy features
+    - Allergy traits
+
+- intent: symp_GERD
+  examples: |
+    - GERD symptoms
+    - what are the symptoms of GERD
+    - symptoms of GERD
+    - GERD
+    - most common symptoms of GERD
+    - features of GERD
+    - signs for GERD
+    - what are the traits of GERD
+    - GERD signs
+    - GERD features
+    - GERD traits
+
+- intent: symp_Chronic cholestasis
+  examples: |
+    - Chronic cholestasis symptoms
+    - what are the symptoms of Chronic cholestasis
+    - symptoms of Chronic cholestasis
+    - Chronic cholestasis
+    - most common symptoms of Chronic cholestasis
+    - features of Chronic cholestasis
+    - signs for Chronic cholestasis
+    - what are the traits of Chronic cholestasis
+    - Chronic cholestasis signs
+    - Chronic cholestasis features
+    - Chronic cholestasis traits
+
+- intent: symp_Drug Reaction
+  examples: |
+    - Drug Reaction symptoms
+    - what are the symptoms of Drug Reaction
+    - symptoms of Drug Reaction
+    - Drug Reaction
+    - most common symptoms of Drug Reaction
+    - features of Drug Reaction
+    - signs for Drug Reaction
+    - what are the traits of Drug Reaction
+    - Drug Reaction signs
+    - Drug Reaction features
+    - Drug Reaction traits
+
+- intent: symp_Peptic ulcer disease
+  examples: |
+    - Peptic ulcer disease symptoms
+    - what are the symptoms of Peptic ulcer disease
+    - symptoms of Peptic ulcer disease
+    - Peptic ulcer disease
+    - most common symptoms of Peptic ulcer disease
+    - features of Peptic ulcer disease
+    - signs for Peptic ulcer disease
+    - what are the traits of Peptic ulcer disease
+    - Peptic ulcer disease signs
+    - Peptic ulcer disease features
+    - Peptic ulcer disease traits
+    - Peptic ulcer symptoms
+    - what are the symptoms of Peptic ulcer
+    - symptoms of Peptic ulcer
+    - Peptic ulcer
+    - most common symptoms of Peptic ulcer 
+    - features of Peptic ulcer 
+    - signs for Peptic ulcer 
+    - what are the traits of Peptic ulcer 
+    - Peptic ulcer signs
+    - Peptic ulcer features
+    - Peptic ulcer traits
+    - ulcer symptoms
+    - what are the symptoms of ulcer
+    - symptoms of ulcer
+    - ulcer
+    - most common symptoms of ulcer 
+    - features of ulcer 
+    - signs for ulcer 
+    - what are the traits of ulcer 
+    - ulcer signs
+    - ulcer features
+    - ulcer traits
+
+- intent: symp_AIDS
+  examples: |
+    - AIDS symptoms
+    - what are the symptoms of AIDS
+    - symptoms of AIDS
+    - AIDS
+    - most common symptoms of AIDS 
+    - features of AIDS 
+    - signs for AIDS 
+    - what are the traits of AIDS 
+    - AIDS signs
+    - AIDS features
+    - AIDS traits
+
+- intent: symp_Diabetes
+  examples: |
+    - Diabetes  symptoms
+    - what are the symptoms of Diabetes 
+    - symptoms of Diabetes 
+    - Diabetes
+    - most common symptoms of Diabetes 
+    - features of Diabetes 
+    - signs for Diabetes 
+    - what are the traits of Diabetes 
+    - Diabetes signs
+    - Diabetes features
+    - Diabetes traits
+
+- intent: symp_Gastroenteritis
+  examples: |
+    - Gastroenteritis symptoms
+    - what are the symptoms of Gastroenteritis
+    - symptoms of Gastroenteritis
+    - Gastroenteritis
+    - most common symptoms of Gastroenteritis 
+    - features of Gastroenteritis 
+    - signs for Gastroenteritis 
+    - what are the traits of Gastroenteritis 
+    - Gastroenteritis signs
+    - Gastroenteritis features
+    - Gastroenteritis traits
+
+- intent: symp_Bronchial Asthma
+  examples: |
+    - Bronchial Asthma symptoms
+    - what are the symptoms of Bronchial Asthma
+    - symptoms of Bronchial Asthma
+    - Bronchial Asthma 
+    - most common symptoms of Bronchial Asthma 
+    - features of Bronchial Asthma 
+    - signs for Bronchial Asthma 
+    - what are the traits of Bronchial Asthma 
+    - Bronchial Asthma signs
+    - Bronchial Asthma features
+    - Bronchial Asthma traits
+    - Asthma symptoms
+    - what are the symptoms of Asthma 
+    - symptoms of Asthma 
+    - Asthma 
+    - most common symptoms of Asthma 
+    - features of Asthma 
+    - signs for Asthma 
+    - what are the traits of Asthma 
+    - Asthma signs
+    - Asthma features
+    - Asthma traits
+
+- intent: symp_Hypertension
+  examples: |
+    - Hypertension  symptoms
+    - what are the symptoms of Hypertension 
+    - symptoms of Hypertension 
+    - Hypertension 
+    - most common symptoms of Hypertension 
+    - features of Hypertension 
+    - signs for Hypertension 
+    - what are the traits of Hypertension 
+    - Hypertension signs
+    - Hypertension features
+    - Hypertension traits
+
+- intent: symp_Migraine
+  examples: |
+    - Migraine symptoms
+    - what are the symptoms of Migraine
+    - symptoms of Migraine
+    - Migraine
+    - most common symptoms of Migraine 
+    - features of Migraine 
+    - signs for Migraine 
+    - what are the traits of Migraine 
+    - Migraine signs
+    - Migraine features
+    - Migraine traits
+
+- intent: symp_Cervical spondylosis
+  examples: |
+    - Cervical spondylosis symptoms
+    - what are the symptoms of Cervical spondylosis
+    - symptoms of Cervical spondylosis
+    - Cervical spondylosis
+    - most common symptoms of Cervical spondylosis 
+    - features of Cervical spondylosis 
+    - signs for Cervical spondylosis 
+    - what are the traits of Cervical spondylosis 
+    - Cervical spondylosis  signs
+    - Cervical spondylosis  features
+    - Cervical spondylosis  traits
+    - spondylosis symptoms
+    - what are the symptoms of spondylosis
+    - symptoms of spondylosis
+    - spondylosis
+    - most common symptoms of spondylosis 
+    - features of spondylosis 
+    - signs for spondylosis 
+    - what are the traits of spondylosis 
+    - spondylosis signs
+    - spondylosis features
+    - spondylosis traits
+
+- intent: symp_Paralysis (brain hemorrhage)
+  examples: |
+    - Paralysis (brain hemorrhage) symptoms
+    - what are the symptoms of Paralysis (brain hemorrhage)
+    - symptoms of Paralysis (brain hemorrhage)
+    - Paralysis (brain hemorrhage)
+    - most common symptoms of Paralysis (brain hemorrhage)
+    - features of Paralysis (brain hemorrhage)
+    - signs for Paralysis (brain hemorrhage)
+    - what are the traits of Paralysis (brain hemorrhage)
+    - Paralysis (brain hemorrhage) signs
+    - Paralysis (brain hemorrhage) features
+    - Paralysis (brain hemorrhage) traits
+    - brain hemorrhage symptoms
+    - what are the symptoms of brain hemorrhage
+    - symptoms of brain hemorrhage
+    - brain hemorrhage
+    - most common symptoms of brain hemorrhage 
+    - features of brain hemorrhage 
+    - signs for brain hemorrhage 
+    - what are the traits of brain hemorrhage 
+    - brain hemorrhage signs
+    - brain hemorrhage features
+    - brain hemorrhage traits
+    - Paralysis symptoms
+    - what are the symptoms of Paralysis
+    - symptoms of Paralysis
+    - Paralysis
+    - most common symptoms of Paralysis 
+    - features of Paralysis 
+    - signs for Paralysis 
+    - what are the traits of Paralysis 
+    - Paralysis signs
+    - Paralysis features
+    - Paralysis traits
+
+- intent: symp_Jaundice
+  examples: |
+    - Jaundice symptoms
+    - what are the symptoms of Jaundice
+    - symptoms of Jaundice
+    - Jaundice
+    - most common symptoms of Jaundice 
+    - features of Jaundice 
+    - signs for Jaundice 
+    - what are the traits of Jaundice 
+    - Jaundice signs
+    - Jaundice features
+    - Jaundice traits
+
+- intent: symp_Malaria
+  examples: |
+    - Malaria symptoms
+    - what are the symptoms of Malaria
+    - symptoms of Malaria
+    - Malaria
+    - most common symptoms of Malaria 
+    - features of Malaria 
+    - signs for Malaria 
+    - what are the traits of Malaria 
+    - Malaria signs
+    - Malaria features
+    - Malaria traits
+
+- intent: symp_Chicken pox
+  examples: |
+    - Chicken pox symptoms
+    - what are the symptoms of Chicken pox
+    - symptoms of Chicken pox
+    - Chicken pox
+    - most common symptoms of Chicken pox
+    - features of Chicken pox
+    - signs for Chicken pox
+    - what are the traits of Chicken pox
+    - Chicken pox signs
+    - Chicken pox features
+    - Chicken pox traits
+
+- intent: symp_Dengue
+  examples: |
+    - Dengue symptoms
+    - what are the symptoms of Dengue
+    - symptoms of Dengue
+    - Dengue
+    - most common symptoms of Dengue
+    - features of Dengue
+    - signs for Dengue
+    - what are the traits of Dengue
+    - Dengue signs
+    - Dengue features
+    - Dengue traits
+
+- intent: symp_Typhoid
+  examples: |
+    - Typhoid symptoms
+    - what are the symptoms of Typhoid
+    - symptoms of Typhoid
+    - Typhoid
+    - most common symptoms of Typhoid
+    - features of Typhoid
+    - signs for Typhoid
+    - what are the traits of Typhoid
+    - Typhoid signs
+    - Typhoid features
+    - Typhoid traits
+
+- intent: symp_hepatitis A
+  examples: |
+    - hepatitis A symptoms
+    - what are the symptoms of hepatitis A
+    - symptoms of hepatitis A
+    - hepatitis A
+    - most common symptoms of hepatitis A
+    - features of hepatitis A
+    - signs for hepatitis A
+    - what are the traits of hepatitis A
+    - hepatitis A signs
+    - hepatitis A features
+    - hepatitis A traits
+
+- intent: symp_Hepatitis B
+  examples: |
+    - Hepatitis B symptoms
+    - what are the symptoms of Hepatitis B
+    - symptoms of Hepatitis B
+    - Hepatitis B
+    - most common symptoms of Hepatitis B
+    - features of Hepatitis B
+    - signs for Hepatitis B
+    - what are the traits of Hepatitis B
+    - Hepatitis B signs
+    - Hepatitis B features
+    - Hepatitis B traits
+
+- intent: symp_Hepatitis C
+  examples: |
+    - Hepatitis C symptoms
+    - what are the symptoms of Hepatitis C
+    - symptoms of Hepatitis C
+    - Hepatitis C
+    - most common symptoms of Hepatitis C
+    - features of Hepatitis C
+    - signs for Hepatitis C
+    - what are the traits of Hepatitis C
+    - Hepatitis C signs
+    - Hepatitis C features
+    - Hepatitis C traits
+
+- intent: symp_Hepatitis D
+  examples: |
+    - Hepatitis D symptoms
+    - what are the symptoms of Hepatitis D
+    - symptoms of Hepatitis D
+    - Hepatitis D
+    - most common symptoms of Hepatitis D
+    - features of Hepatitis D
+    - signs for Hepatitis D
+    - what are the traits of Hepatitis D
+    - Hepatitis D signs
+    - Hepatitis D features
+    - Hepatitis D traits
+
+- intent: symp_Hepatitis E
+  examples: |
+    - Hepatitis E symptoms
+    - what are the symptoms of Hepatitis E
+    - symptoms of Hepatitis E
+    - Hepatitis E
+    - most common symptoms of Hepatitis E
+    - features of Hepatitis E
+    - signs for Hepatitis E
+    - what are the traits of Hepatitis E
+    - Hepatitis E signs
+    - Hepatitis E features
+    - Hepatitis E traits
+
+- intent: symp_Alcoholic hepatitis
+  examples: |
+    - Alcoholic hepatitis symptoms
+    - what are the symptoms of Alcoholic hepatitis
+    - symptoms of Alcoholic hepatitis
+    - Alcoholic hepatitis
+    - most common symptoms of Alcoholic hepatitis
+    - features of Alcoholic hepatitis
+    - signs for Alcoholic hepatitis
+    - what are the traits of Alcoholic hepatitis
+    - Alcoholic hepatitis signs
+    - Alcoholic hepatitis features
+    - Alcoholic hepatitis traits
+
+- intent: symp_Tuberculosis
+  examples: |
+    - Tuberculosis symptoms
+    - what are the symptoms of Tuberculosis
+    - symptoms of Tuberculosis
+    - Tuberculosis
+    - most common symptoms of Tuberculosis
+    - features of Tuberculosis
+    - signs for Tuberculosis
+    - what are the traits of Tuberculosis
+    - Tuberculosis signs
+    - Tuberculosis features
+    - Tuberculosis traits
+
+- intent: symp_Common Cold
+  examples: |
+    - Common Cold symptoms
+    - what are the symptoms of Common Cold
+    - symptoms of Common Cold
+    - Common Cold
+    - most common symptoms of Common Cold
+    - features of Common Cold
+    - signs for Common Cold
+    - what are the traits of Common Cold
+    - Common Cold signs
+    - Common Cold features
+    - Common Cold traits
+    - Cold symptoms
+    - what are the symptoms of Cold
+    - symptoms of Cold
+    - Cold
+    - most common symptoms of Cold
+    - features of Cold
+    - signs for Cold
+    - what are the traits of Cold
+    - Cold signs
+    - Cold features
+    - Cold traits
+
+- intent: symp_Pneumonia
+  examples: |
+    - Pneumonia symptoms
+    - what are the symptoms of Pneumonia
+    - symptoms of Pneumonia
+    - Pneumonia
+    - most common symptoms of Pneumonia
+    - features of Pneumonia
+    - signs for Pneumonia
+    - what are the traits of Pneumonia
+    - Pneumonia signs
+    - Pneumonia features
+    - Pneumonia traits
+
+- intent: symp_Dimorphic hemmorhoids(piles)
+  examples: |
+    - Dimorphic hemmorhoids symptoms
+    - what are the symptoms of Dimorphic hemmorhoids
+    - symptoms of Dimorphic hemmorhoids
+    - Dimorphic hemmorhoids
+    - most common symptoms of Dimorphic hemmorhoids
+    - features of Dimorphic hemmorhoids
+    - signs for Dimorphic hemmorhoids
+    - what are the traits of Dimorphic hemmorhoids
+    - Dimorphic hemmorhoids signs
+    - Dimorphic hemmorhoids features
+    - Dimorphic hemmorhoids traits
+    - piles symptoms
+    - what are the symptoms of piles
+    - symptoms of piles
+    - piles
+    - most common symptoms of piles
+    - features of piles
+    - signs for piles
+    - what are the traits of piles
+    - piles signs
+    - piles features
+    - piles traits
+
+- intent: symp_Heart attack
+  examples: |
+    - Heart attack symptoms
+    - what are the symptoms of Heart attack
+    - symptoms of Heart attack
+    - Heart attack
+    - most common symptoms of Heart attack
+    - features of Heart attack
+    - signs for Heart attack
+    - what are the traits of Heart attack
+    - Heart attack signs
+    - Heart attack features
+    - Heart attack traits
+
+- intent: symp_Varicose veins
+  examples: |
+    - Varicose veins symptoms
+    - what are the symptoms of Varicose veins
+    - symptoms of Varicose veins
+    - Varicose veins
+    - most common symptoms of Varicose veins
+    - features of Varicose veins
+    - signs for Varicose veins
+    - what are the traits of Varicose veins
+    - Varicose veins signs
+    - Varicose veins features
+    - Varicose veins traits
+
+- intent: symp_Hypothyroidism
+  examples: |
+    - Hypothyroidism symptoms
+    - what are the symptoms of Hypothyroidism
+    - symptoms of Hypothyroidism
+    - Hypothyroidism
+    - most common symptoms of Hypothyroidism
+    - features of Hypothyroidism
+    - signs for Hypothyroidism
+    - what are the traits of Hypothyroidism
+    - Hypothyroidism signs
+    - Hypothyroidism features
+    - Hypothyroidism traits
+
+- intent: symp_Hyperthyroidism
+  examples: |
+    - Hyperthyroidism symptoms
+    - what are the symptoms of Hyperthyroidism
+    - symptoms of Hyperthyroidism
+    - Hyperthyroidism
+    - most common symptoms of Hyperthyroidism
+    - features of Hyperthyroidism
+    - signs for Hyperthyroidism
+    - what are the traits of Hyperthyroidism
+    - Hyperthyroidism signs
+    - Hyperthyroidism features
+    - Hyperthyroidism traits
+
+- intent: symp_Hypoglycemia
+  examples: |
+    - Hypoglycemia symptoms
+    - what are the symptoms of Hypoglycemia
+    - symptoms of Hypoglycemia
+    - Hypoglycemia
+    - most common symptoms of Hypoglycemia
+    - features of Hypoglycemia
+    - signs for Hypoglycemia
+    - what are the traits of Hypoglycemia
+    - Hypoglycemia signs
+    - Hypoglycemia features
+    - Hypoglycemia traits
+
+- intent: symp_Osteoarthristis
+  examples: |
+    - Osteoarthristis symptoms
+    - what are the symptoms of Osteoarthristis
+    - symptoms of Osteoarthristis
+    - Osteoarthristis
+    - most common symptoms of Osteoarthristis
+    - features of Osteoarthristis
+    - signs for Osteoarthristis
+    - what are the traits of Osteoarthristis
+    - Osteoarthristis signs
+    - Osteoarthristis features
+    - Osteoarthristis traits
+
+- intent: symp_Arthritis
+  examples: |
+    - Arthritis symptoms
+    - what are the symptoms of Arthritis
+    - symptoms of Arthritis
+    - Arthritis
+    - most common symptoms of Arthritis
+    - features of Arthritis
+    - signs for Arthritis
+    - what are the traits of Arthritis
+    - Arthritis signs
+    - Arthritis features
+    - Arthritis traits
+
+- intent: symp_(vertigo) Paroymsal  Positional Vertigo
+  examples: |
+    - Paroymsal Positional Vertigo symptoms
+    - what are the symptoms of Paroymsal Positional Vertigo
+    - symptoms of Paroymsal Positional Vertigo
+    - Paroymsal Positional Vertigo
+    - most common symptoms of Paroymsal Positional Vertigo
+    - features of Paroymsal Positional Vertigo
+    - signs for Paroymsal Positional Vertigo
+    - what are the traits of Paroymsal Positional Vertigo
+    - Paroymsal  Positional Vertigo signs
+    - Paroymsal  Positional Vertigo features
+    - Paroymsal  Positional Vertigo traits
+    - Vertigo symptoms
+    - what are the symptoms of Vertigo
+    - symptoms of Vertigo
+    - Vertigo
+    - most common symptoms of Vertigo
+    - features of Vertigo
+    - signs for Vertigo
+    - what are the traits of Vertigo
+    - Vertigo signs
+    - Vertigo features
+    - Vertigo traits
+
+- intent: symp_Acne
+  examples: |
+    - Acne symptoms
+    - what are the symptoms of Acne
+    - symptoms of Acne
+    - Acne
+    - most common symptoms of Acne
+    - features of Acne
+    - signs for Acne
+    - what are the traits of Acne
+    - Acne signs
+    - Acne features
+    - Acne traits
+
+- intent: symp_Urinary tract infection
+  examples: |
+    - Urinary tract infection symptoms
+    - what are the symptoms of Urinary tract infection
+    - symptoms of Urinary tract infection
+    - Urinary tract infection
+    - most common symptoms of Urinary tract infection
+    - features of Urinary tract infection
+    - signs for Urinary tract infection
+    - what are the traits of Urinary tract infection
+    - Urinary tract infection signs
+    - Urinary tract infection features
+    - Urinary tract infection traits
+
+- intent: symp_Psoriasis
+  examples: |
+    - Psoriasis symptoms
+    - what are the symptoms of Psoriasis
+    - symptoms of Psoriasis
+    - Psoriasis
+    - most common symptoms of Psoriasis
+    - features of Psoriasis
+    - signs for Psoriasis
+    - what are the traits of Psoriasis
+    - Psoriasis signs
+    - Psoriasis features
+    - Psoriasis traits
+
+- intent: symp_Impetigo
+  examples: |
+    - Impetigo symptoms
+    - what are the symptoms of Impetigo
+    - symptoms of Impetigo
+    - Impetigo
+    - most common symptoms of Impetigo
+    - features of Impetigo
+    - signs for Impetigo
+    - what are the traits of Impetigo
+    - Impetigo signs
+    - Impetigo features
+    - Impetigo traits
