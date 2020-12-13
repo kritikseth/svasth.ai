@@ -24,7 +24,7 @@ We have created a chatbot that can reduce the stress from frontline healthcare w
 ## User Prerequisites
 - [APP(Click here to download the app)](https://)
 
-## What can Svasth.ai 
+## What can Svasth.ai do
 The chatbot can answers your queries which include:
 1. Predicting diseases based on symptoms input by the user.
 2. Providing the symptoms of given disease and general drug used for its treatment 
