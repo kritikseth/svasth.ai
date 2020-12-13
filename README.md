@@ -31,7 +31,7 @@ The chatbot can answers your queries which include:
 3. A user can also ask for the side-effects of drugs
 4. Recommends nearby hospitals
 
-##Features to be Implemented 
+##Features to be Implemented
 Features that can be further added to this chat-bot:
 1. Providing precautions for a disease as asked by the user
 2. Location based doctor consulting 
