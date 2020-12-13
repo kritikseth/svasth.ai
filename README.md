@@ -7,7 +7,7 @@
   - [Problem Statement ](#problem-statement)
   - [About](#about)
   - [User Prerequisites](#user-prerequisites)
-  - [What can Svasth.ai do](#What-can-Svasth.ai-do)
+  - [What can Svasth.ai do](#what-can-svasth.ai-do)
   - [Features to be Implemented](#features-to-be-implemented)
 
   
