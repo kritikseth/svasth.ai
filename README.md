@@ -3,7 +3,7 @@
 *HackOff v3.0 - Siemens Healthineers Problem Statement 3*
 
 ## Table Of Contents
-  - [Working Demo] (#working-demo)
+  - [Working Demo](#working-demo)
   - [Problem Statement ](#problem-statement)
   - [About](#about)
   - [User Prerequisites](#user-prerequisites)
