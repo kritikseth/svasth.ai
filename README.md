@@ -7,7 +7,8 @@
   - [Problem Statement ](#problem-statement)
   - [About](#about)
   - [User Prerequisites](#user-prerequisites)
-  - [Things Svasth.ai can do](#things-svasth.ai-can-do)
+  - [Svasth.ai Features](#svasth.ai-features)
+  - [Features to be Implemented](#features-to-be-implemented)
 
   
   
@@ -23,12 +24,18 @@ We have created a chatbot that can reduce the stress from frontline healthcare w
 ## User Prerequisites
 - [APP(Click here to download the app)](https://)
 
-## Things Svasth.ai can do
+## Svasth.ai Features
 The chatbot can answers your queries which include:
 1. Predicting diseases based on symptoms input by the user.
 2. Providing the symptoms of given disease and general drug used for its treatment 
 3. A user can also ask for the side-effects of drugs
 4. Recommends nearby hospitals
+
+##Features to be Implemented 
+Features that can be further added to this chat-bot:
+1. Providing precautions for a disease as asked by the user
+2. Location based doctor consulting 
+
 
 ## Technologies Used
 - RASA
