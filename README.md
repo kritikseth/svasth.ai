@@ -13,8 +13,6 @@
 ## Working Demo
 - [Click Here to Working Chat-Bot Video](https://youtu.be/6qWDjOwaF2I)
 
-## Problem Statement
-Build a AI driven chatbot for general health related query(a first level screening)
 
 ## About
 We have created a chatbot that can reduce the stress from frontline healthcare workers and help the patients by providing a pre-diagnosis based on the symptoms and other basic information that a patient needs. The chatbot also helps in suggesting nearby hospitals to the patients.
