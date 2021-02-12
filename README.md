@@ -1,6 +1,5 @@
 # Svasth.ai
 #### *Medical Chat-Bot*
-*HackOff v3.0 - Siemens Healthineers Problem Statement 3*
 
 ## Table Of Contents
   - [Working Demo](#working-demo)
